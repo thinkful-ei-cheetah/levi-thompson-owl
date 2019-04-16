@@ -1,13 +1,11 @@
 import React from 'react';
-import Card from './Card'
-import './List.css';
+import Participant from './participant.js';
 
-
-export default function Participants(props) {
+export default function ParticipantList(props) {
   return (
     <section className='participant-list'>
       <div className='participants-div'>
-        {props.map((participant) =>
+        {props.participants.map((participant) =>
           <Participant
             id= {participant.id}
             name= {participant.name}

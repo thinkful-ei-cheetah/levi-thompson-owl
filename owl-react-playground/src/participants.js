@@ -41,3 +41,5 @@ const participants = [
         onStage: true
     }
 ];
+
+export default participants;
